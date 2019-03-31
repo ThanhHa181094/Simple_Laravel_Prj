@@ -19,3 +19,7 @@ Route::get('articles', 'ArticleController@index');
 //Route::post('articles', 'ArticleController@store');
 //Route::put('articles/{id}', 'ArticleController@update');
 //Route::delete('articles/{id}', 'ArticleController@delete');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
