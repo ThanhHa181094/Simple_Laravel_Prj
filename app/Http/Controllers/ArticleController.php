@@ -82,7 +82,6 @@ ArticleController extends Controller
     public function edit($id)
     {
         $article = Article::find($id);
-        // $url = action('UserController@profile', ['id' => 1]);
         return view('article.edit', compact('article'));
     }
 
